@@ -2,17 +2,35 @@
 header {
       display: flex;
       width: 100%;
-      background-color: @lightest;
+      background-color: @lightGrey;
+
+      @media @mobile {
+        flex-direction: column;
+        }
 
       .headerMain {
-          display: flex;
-          flex-direction: column;
-          flex-basis: 50%;
+            width: 50%;
+
+            @media @mobile {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
 
         .headerName {
             display: flex;
+            flex-direction: row;
             align-items: flex-end;
-            
+            justify-content: flex-end;
+            width: 100%;
+
+            @media @mobile {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+
             h1 {
                 font-size: 5vw;
                 padding-bottom: 8px;
@@ -20,56 +38,79 @@ header {
                 margin-left: 2%;
                 max-width: 60%;
 
-                @media @large {
-                    font-size: 3.5vw;
+                @media @mobile {
+                    font-size: 5vw;
+                    max-width: 100%;
+                    margin: 0;
+                    margin-top: 15px;
+                    text-align: center;
                 }
+
+                @media @tablet {
+                    font-size: 4vw;
+                }
+
             }
 
             img {
                 margin-left: 1%;
+                margin-right: 2%;
                 max-width: 35%;
-            }
 
+                @media @mobile {
+                    width: 100%;
+                }
+            }
         }
 
         .slogan {
-            
+            width: 100%;
 
-            p {
-               font-size: 1.5vw;
-               padding-left: 5%;
-
+            @media @mobile {
+                width: 100%;
             }
 
-        }
-      }
+                p {
+                font-size: 2vw;
+                padding-left: 5%;
 
-      .buttonContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-basis: 25%;
-        margin-right: 12.5%;
-        margin-left: 12.5%;
-
-
-        button {
-            color: @lightGrey;
-            background: @darkGrey;
-            border: 3px solid @navy;
-            border-radius: 10px;
-            padding: 15px 30%;
-            font-size: 2.75vw;
-            font-family: @fontButton;
-
-
-            @media @large {
-                font-size: 1.75vw;
+                @media @mobile {
+                    font-size: 4vw;
+                    }
+                }
             }
         }
 
-        button:hover {
-            color: @orange;
+        .buttonContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-basis: 33%;
+            margin-right: 8.5%;
+            margin-left: 8.5%;
+    
+    
+            button {
+                color: @lightGrey;
+                background: @darkGrey;
+                border: 3px solid @navy;
+                border-radius: 15px;
+                padding: 20px 33%;
+                font-size: 2.75vw;
+                font-family: @fontButton;
+    
+                @media @mobile {
+                    padding: 10px 25%;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    font-size: 5vw;
+                }
+            }
+    
+            button:hover {
+                color: @orange;
+            }
         }
-      }
-}
+    }
+
+      
