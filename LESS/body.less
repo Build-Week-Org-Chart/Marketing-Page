@@ -11,7 +11,7 @@ body {
 
         img {
             margin: 1%;
-            border-radius: 10px;
+            border-radius: 15px;
             max-width: 48%;
 
             @media @mobile {
@@ -26,7 +26,7 @@ body {
             flex-direction: column;
             align-items: center;
             margin: 1%;
-            border-radius: 10px;
+            border-radius: 15px;
             background: @darkGrey;
             color: @lightGrey;
 
@@ -40,23 +40,23 @@ body {
                 display: flex;
 
                 p {
-                font-size: 2vw;
+                font-size: 2.25vw;
                 width: 92%;
                 margin: 4%;
                 margin-bottom: 25px;
 
-                @media @large {
-                    font-size: 2.75rem;
-                }
+                    @media @large {
+                        font-size: 2.75rem;
+                    }
 
-                @media @tablet {
-                    font-size: 2.75vw;
-                    margin-bottom: 10px;
-                } 
-                
-                @media @mobile {
-                    font-size: 5vw;
-                }
+                    @media @tablet {
+                        font-size: 2.75vw;
+                        margin-bottom: 10px;
+                    } 
+                    
+                    @media @mobile {
+                        font-size: 5vw;
+                    }
 
                 }//end p
             }//end introParagraph
@@ -65,24 +65,20 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 100%;
-                margin-bottom: 5px;
-                margin-top: 5px;
-
-                .signupButton {
-                    width: 70%;
-                    
+                width: 70%;
+                margin-right: 1%;
+                margin-left: 1%;
+                margin-top: 30px;
+                margin-bottom: 15px;
+    
                     @media @large {
-                        width: 66%;
+                        margin-top: 15px;
+                        margin-bottom: 15px;
                     }
 
                     @media @tablet {
-                        width: 70%;
-                        margin-top: 0;
-                    }
-
-                    @media @mobile {
                         margin-top: 15px;
+                        margin-bottom: 15px;
                     }
 
                     button {
@@ -90,10 +86,9 @@ body {
                             background: @navy;
                             border: 3px solid @lightGrey;
                             border-radius: 15px;
-                            padding: 10px 33%;
-                            font-size: 2.25vw;
+                            padding: 15px 33%;
+                            font-size: 2.5vw;
                             font-family: @fontButton;
-                            margin: 0;
                             text-align: center;
 
                             @media @large {
@@ -117,62 +112,107 @@ body {
                         transform: scale(1.1);
                         color: @orange;
                     }//end button hover
-                }//end signUpButton
             }//end buttonContainer
         }//end introContent
     }//end intro
 
     .mainFeatures {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-        h3 {
+            .featuresHeader {
+                background: @navy;
+                width: 100%;
+                text-align: center;
 
-        }//end h3
+            h3 {
+             font-size: 3vw;
+             margin-top: 25px;
+             margin-bottom: 15px;
+             color: @lightGrey;
 
-        .feature {
+            }//end h3
+        }//end featuresHeader
 
-            h4 {
+        .featuresContent {
+            display: flex;
+            justify-content: space-around;
 
-            }//end h4
+            .feature {
+                width: 30%;
 
-            p {
+                h4 {
+                    font-size: 2vw;
+                    margin-top: 15px;
+                    margin-bottom: 10px;
+                    border-bottom: 2px solid @darkGrey;
+                }//end h4
 
-            }//end p
+                p {
 
-        }//end .feature
+                }//end p
+
+            }//end .feature
+        }//end featuresContent
     }//end mainFeatures
 
     .solidColorDivider {
-        height: 20px;
+        height: 30px;
         background: @orange;
     }//end solidColorDivider
 
-    .productExamples {
+    .productContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
 
-        .productDescription {
+        .productExamples {
+            width: 46%;
+            display: flex;
+            flex-direction: column;
 
-            h4 {
+            .productDescription {
+                background: @mediumGrey;
+                width: 100%;
+                text-align: center;
+                margin-top: 15px;
+                padding-top: 15px;
+            
+                h4 {
+                    font-size: 2vw;
+                    margin-top: 15px;
+                    margin-bottom: 10px;
+                }//end h4
+            }//end productDescription
 
-            }//end h4
-        }//end productDescription
+            .productContent {
+                display: flex;
+                margin-bottom: 15px;
+                height: 240px;
 
-        .productContent {
+                img {
 
-            img {
+                }//end img
 
-            }//end img
-
-            p {
-
-            }//end p
-        }//end productContent
-    }//end productExamples
+                p {
+                    font-size: 1.25vw;
+                    padding: 5px;
+                }//end p
+            }//end productContent
+        }//end productExamples
+    }//end productContainer
 
     .contactus {
+        background: @lightGrey;
 
         h2 {
         font-size: 3vw;
-        padding-top: 15px;
+        padding-top: 25px;
         text-align: center;
+        background: @navy;
+        color: @lightGrey;
         }//end h2
 
         .mainContact {
@@ -182,18 +222,20 @@ body {
 
             .socialMedia {
                 display: flex;
-                align-items: flex-end;
-
-                margin-right: 2%;
+                flex-direction: column;
+                justify-content: space-around;
+                margin-right: 5%;
+                margin-left: 5%;
 
                 a {
-
+                min-width: 100%;      
                 }//end a (includes img for social media)
             }//end socialMedia
         
             form {
                 display: flex;
                 flex-direction: column;
+                align-self: flex-end;
 
                 .nameEmailContainer {
                     display: flex;
@@ -202,19 +244,21 @@ body {
                     .name {
 
                         input {
-                        font-size: 1.4rem;
+                        font-size: 1.5rem;
                         margin-right: 10px;
                         .inputBorder;
                         .formFont;
+                        color: @navy;
                         }//end input
                     }//end name
 
                     .email {
                         
                         input {
-                        font-size: 1.4rem;
+                        font-size: 1.5rem;
                         .inputBorder;
                         .formFont;
+                        color: @navy;
                         }//end input
                     }//end email
                 }//end nameEmailContainer
@@ -222,10 +266,11 @@ body {
                 .message {
 
                     textarea {
-                    font-size: 1.3rem;
+                    font-size: 1.4rem;
                     margin: 1%;
                     .inputBorder;
                     .formFont;
+                    color: @navy;
                     }//end input
                 }//end message
 
@@ -234,10 +279,19 @@ body {
                     justify-content: flex-end;
 
                     input {
-                        font-size: 1.75rem;
+                        font-size: 2rem;
                         margin: 1%;
-                        border: 2px solid @mediumGrey;
-                        border-radius: 5px;
+                        padding: 10px 20px;
+                        border: 2px solid @navy;
+                        border-radius: 10px;
+                        background: @navy;
+                        color: @lightGrey;
+                        font-family: @fontButton;
+                    }
+
+                    input:hover {
+                        background: @lightGrey;
+                        color: @navy;
                     }
 
                 }//end submitButton

@@ -360,7 +360,7 @@ body .intro {
 }
 body .intro img {
   margin: 1%;
-  border-radius: 10px;
+  border-radius: 15px;
   max-width: 48%;
 }
 @media (max-width: 500px) {
@@ -375,7 +375,7 @@ body .intro .introContent {
   flex-direction: column;
   align-items: center;
   margin: 1%;
-  border-radius: 10px;
+  border-radius: 15px;
   background: #545E75;
   color: #D3ddEA;
 }
@@ -390,7 +390,7 @@ body .intro .introContent .introParagraph {
   display: flex;
 }
 body .intro .introContent .introParagraph p {
-  font-size: 2vw;
+  font-size: 2.25vw;
   width: 92%;
   margin: 4%;
   margin-bottom: 25px;
@@ -415,71 +415,131 @@ body .intro .introContent .buttonContainer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-body .intro .introContent .buttonContainer .signupButton {
   width: 70%;
+  margin-right: 1%;
+  margin-left: 1%;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 @media (min-width: 1350px) {
-  body .intro .introContent .buttonContainer .signupButton {
-    width: 66%;
+  body .intro .introContent .buttonContainer {
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 880px) {
-  body .intro .introContent .buttonContainer .signupButton {
-    width: 70%;
-    margin-top: 0;
-  }
-}
-@media (max-width: 500px) {
-  body .intro .introContent .buttonContainer .signupButton {
+  body .intro .introContent .buttonContainer {
     margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
-body .intro .introContent .buttonContainer .signupButton button {
+body .intro .introContent .buttonContainer button {
   color: #D3ddEA;
   background: #22324d;
   border: 3px solid #D3ddEA;
   border-radius: 15px;
-  padding: 10px 33%;
-  font-size: 2.25vw;
+  padding: 15px 33%;
+  font-size: 2.5vw;
   font-family: 'Questrial', sans-serif;
-  margin: 0;
   text-align: center;
 }
 @media (min-width: 1350px) {
-  body .intro .introContent .buttonContainer .signupButton button {
+  body .intro .introContent .buttonContainer button {
     font-size: 2.75rem;
   }
 }
 @media (max-width: 880px) {
-  body .intro .introContent .buttonContainer .signupButton button {
+  body .intro .introContent .buttonContainer button {
     padding: 15px 33%;
     font-size: 2.75vw;
   }
 }
 @media (max-width: 500px) {
-  body .intro .introContent .buttonContainer .signupButton button {
+  body .intro .introContent .buttonContainer button {
     padding: 10px 25%;
     margin-top: 15px;
     margin-bottom: 15px;
     font-size: 5vw;
   }
 }
-body .intro .introContent .buttonContainer .signupButton button:hover {
+body .intro .introContent .buttonContainer button:hover {
   transform: scale(1.1);
   color: #FF990A;
 }
+body .mainFeatures {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .mainFeatures .featuresHeader {
+  background: #22324d;
+  width: 100%;
+  text-align: center;
+}
+body .mainFeatures .featuresHeader h3 {
+  font-size: 3vw;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #D3ddEA;
+}
+body .mainFeatures .featuresContent {
+  display: flex;
+  justify-content: space-around;
+}
+body .mainFeatures .featuresContent .feature {
+  width: 30%;
+}
+body .mainFeatures .featuresContent .feature h4 {
+  font-size: 2vw;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #545E75;
+}
 body .solidColorDivider {
-  height: 20px;
+  height: 30px;
   background: #FF990A;
+}
+body .productContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body .productContainer .productExamples {
+  width: 46%;
+  display: flex;
+  flex-direction: column;
+}
+body .productContainer .productExamples .productDescription {
+  background: #828C9B;
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+body .productContainer .productExamples .productDescription h4 {
+  font-size: 2vw;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+body .productContainer .productExamples .productContent {
+  display: flex;
+  margin-bottom: 15px;
+  height: 240px;
+}
+body .productContainer .productExamples .productContent p {
+  font-size: 1.25vw;
+  padding: 5px;
+}
+body .contactus {
+  background: #D3ddEA;
 }
 body .contactus h2 {
   font-size: 3vw;
-  padding-top: 15px;
+  padding-top: 25px;
   text-align: center;
+  background: #22324d;
+  color: #D3ddEA;
 }
 body .contactus .mainContact {
   display: flex;
@@ -488,19 +548,25 @@ body .contactus .mainContact {
 }
 body .contactus .mainContact .socialMedia {
   display: flex;
-  align-items: flex-end;
-  margin-right: 2%;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+body .contactus .mainContact .socialMedia a {
+  min-width: 100%;
 }
 body .contactus .mainContact form {
   display: flex;
   flex-direction: column;
+  align-self: flex-end;
 }
 body .contactus .mainContact form .nameEmailContainer {
   display: flex;
   margin: 5px;
 }
 body .contactus .mainContact form .nameEmailContainer .name input {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin-right: 10px;
   border: 2px solid #828C9B;
   border-radius: 5px;
@@ -508,14 +574,14 @@ body .contactus .mainContact form .nameEmailContainer .name input {
   color: #22324d;
 }
 body .contactus .mainContact form .nameEmailContainer .email input {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   border: 2px solid #828C9B;
   border-radius: 5px;
   font-family: 'Domine', serif;
   color: #22324d;
 }
 body .contactus .mainContact form .message textarea {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   margin: 1%;
   border: 2px solid #828C9B;
   border-radius: 5px;
@@ -527,8 +593,16 @@ body .contactus .mainContact form .submitButton {
   justify-content: flex-end;
 }
 body .contactus .mainContact form .submitButton input {
-  font-size: 1.75rem;
+  font-size: 2rem;
   margin: 1%;
-  border: 2px solid #828C9B;
-  border-radius: 5px;
+  padding: 10px 20px;
+  border: 2px solid #22324d;
+  border-radius: 10px;
+  background: #22324d;
+  color: #D3ddEA;
+  font-family: 'Questrial', sans-serif;
+}
+body .contactus .mainContact form .submitButton input:hover {
+  background: #D3ddEA;
+  color: #22324d;
 }
