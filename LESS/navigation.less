@@ -6,9 +6,9 @@
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    background-color: @lightGrey;
+    background-color: @navy;
     margin-top: 20px;
-    border-bottom: 2px solid @navy;
+    border-bottom: 3px solid @mediumGrey;
 
     nav {
     display: flex;
@@ -21,16 +21,25 @@
 
         @media @mobile {
             width: 90%;
+            height: 60px;
+            font-size: 2rem;
+            margin-right: 5%;
+            margin-left: 5%;
         }
 
         a {
-            color: @navy;
+            color: @lightGrey;
             text-decoration: none;
         }
 
         a:hover {
             color: @orange;
-        }
+        }  
+    }
+    img {
 
+        @media @mobile {
+           display: none;
+        }
     }
 }
