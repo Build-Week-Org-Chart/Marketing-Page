@@ -31,31 +31,34 @@ header {
                 width: 100%;
             }
 
-            h1 {
+           h1 {
                 font-size: 5vw;
                 padding-bottom: 8px;
                 color: if((iscolor(@darkGrey)), darken(@darkGrey, 15%));
                 margin-left: 2%;
-                max-width: 60%;
+                max-width: 65%;
 
-                @media @mobile {
-                    font-size: 5vw;
-                    max-width: 100%;
-                    margin: 0;
-                    margin-top: 15px;
-                    text-align: center;
+                @media @large {
+                    font-size: 6.25rem;
                 }
 
                 @media @tablet {
-                    font-size: 4vw;
+                    font-size: 6vw;
                 }
-
+                
+                @media @mobile {
+                    font-size: 10vw;
+                    max-width: 100%;
+                    margin: 0;
+                    margin-top: 25px;
+                    text-align: center;
+                }
             }
 
             img {
                 margin-left: 1%;
                 margin-right: 2%;
-                max-width: 35%;
+                max-width: 30%;
 
                 @media @mobile {
                     width: 100%;
@@ -72,11 +75,24 @@ header {
 
                 p {
                 font-size: 2vw;
-                padding-left: 5%;
+                padding: 0;
+                text-align: center;
 
+                @media @large {
+                    font-size: 2.5rem;
+                    }
+
+                @media @tablet {
+                    font-size: 3vw;
+                    }
+                
                 @media @mobile {
                     font-size: 4vw;
                     }
+
+
+
+ 
                 }
             }
         }
@@ -95,19 +111,29 @@ header {
                 background: @darkGrey;
                 border: 3px solid @navy;
                 border-radius: 15px;
-                padding: 20px 33%;
-                font-size: 2.75vw;
+                padding: 15px 33%;
+                font-size: 2.5vw;
                 font-family: @fontButton;
     
+                @media @large {
+                    font-size: 3.25rem;
+                }
+
+                @media @tablet {
+                    font-size: 3vw;
+                } 
+                
                 @media @mobile {
                     padding: 10px 25%;
                     margin-top: 15px;
                     margin-bottom: 15px;
                     font-size: 5vw;
                 }
+
             }
     
             button:hover {
+                transform: scale(1.1);
                 color: @orange;
             }
         }

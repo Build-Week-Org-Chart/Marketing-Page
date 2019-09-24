@@ -1,0 +1,301 @@
+body {
+
+    .intro {
+        display: flex;
+        width: 100%;
+
+        @media @mobile {
+        display: flex;
+        flex-direction: column;
+        }
+
+        img {
+            margin: 1%;
+            border-radius: 15px;
+            max-width: 48%;
+
+            @media @mobile {
+                max-width: 90%;
+                margin: 5%;
+                }
+        }//end img
+
+        .introContent {
+            max-width: 48%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1%;
+            border-radius: 15px;
+            background: @darkGrey;
+            color: @lightGrey;
+
+            @media @mobile {
+                max-width: 90%;
+                margin-right: 5%;
+                margin-left: 5%;
+                }
+
+            .introParagraph {
+                display: flex;
+
+                p {
+                font-size: 2.25vw;
+                width: 92%;
+                margin: 4%;
+                margin-bottom: 25px;
+
+                    @media @large {
+                        font-size: 2.75rem;
+                    }
+
+                    @media @tablet {
+                        font-size: 2.75vw;
+                        margin-bottom: 10px;
+                    } 
+                    
+                    @media @mobile {
+                        font-size: 5vw;
+                    }
+
+                }//end p
+            }//end introParagraph
+
+            .buttonContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 70%;
+                margin-right: 1%;
+                margin-left: 1%;
+                margin-top: 30px;
+                margin-bottom: 15px;
+    
+                    @media @large {
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                    }
+
+                    @media @tablet {
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                    }
+
+                    button {
+                            color: @lightGrey;
+                            background: @navy;
+                            border: 3px solid @lightGrey;
+                            border-radius: 15px;
+                            padding: 15px 33%;
+                            font-size: 2.5vw;
+                            font-family: @fontButton;
+                            text-align: center;
+
+                            @media @large {
+                                font-size: 2.75rem;
+                            }
+            
+                            @media @tablet {
+                                padding: 15px 33%;
+                                font-size: 2.75vw;
+                            } 
+                            
+                            @media @mobile {
+                                padding: 10px 25%;
+                                margin-top: 15px;
+                                margin-bottom: 15px;
+                                font-size: 5vw;
+                            }
+                    }//end button
+
+                    button:hover {
+                        transform: scale(1.1);
+                        color: @orange;
+                    }//end button hover
+            }//end buttonContainer
+        }//end introContent
+    }//end intro
+
+    .mainFeatures {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+            .featuresHeader {
+                background: @navy;
+                width: 100%;
+                text-align: center;
+
+            h3 {
+             font-size: 3vw;
+             margin-top: 25px;
+             margin-bottom: 15px;
+             color: @lightGrey;
+
+            }//end h3
+        }//end featuresHeader
+
+        .featuresContent {
+            display: flex;
+            justify-content: space-around;
+
+            .feature {
+                width: 30%;
+
+                h4 {
+                    font-size: 2vw;
+                    margin-top: 15px;
+                    margin-bottom: 10px;
+                    border-bottom: 2px solid @darkGrey;
+                }//end h4
+
+                p {
+
+                }//end p
+
+            }//end .feature
+        }//end featuresContent
+    }//end mainFeatures
+
+    .solidColorDivider {
+        height: 30px;
+        background: @orange;
+    }//end solidColorDivider
+
+    .productContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .productExamples {
+            width: 46%;
+            display: flex;
+            flex-direction: column;
+
+            .productDescription {
+                background: @mediumGrey;
+                width: 100%;
+                text-align: center;
+                margin-top: 15px;
+                padding-top: 15px;
+            
+                h4 {
+                    font-size: 2vw;
+                    margin-top: 15px;
+                    margin-bottom: 10px;
+                }//end h4
+            }//end productDescription
+
+            .productContent {
+                display: flex;
+                margin-bottom: 15px;
+                height: 240px;
+
+                img {
+
+                }//end img
+
+                p {
+                    font-size: 1.25vw;
+                    padding: 5px;
+                }//end p
+            }//end productContent
+        }//end productExamples
+    }//end productContainer
+
+    .contactus {
+        background: @lightGrey;
+
+        h2 {
+        font-size: 3vw;
+        padding-top: 25px;
+        text-align: center;
+        background: @navy;
+        color: @lightGrey;
+        }//end h2
+
+        .mainContact {
+            display: flex;
+            width: 98%;
+            margin: 1%;
+
+            .socialMedia {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                margin-right: 5%;
+                margin-left: 5%;
+
+                a {
+                min-width: 100%;      
+                }//end a (includes img for social media)
+            }//end socialMedia
+        
+            form {
+                display: flex;
+                flex-direction: column;
+                align-self: flex-end;
+
+                .nameEmailContainer {
+                    display: flex;
+                    margin: 5px;
+
+                    .name {
+
+                        input {
+                        font-size: 1.5rem;
+                        margin-right: 10px;
+                        .inputBorder;
+                        .formFont;
+                        color: @navy;
+                        }//end input
+                    }//end name
+
+                    .email {
+                        
+                        input {
+                        font-size: 1.5rem;
+                        .inputBorder;
+                        .formFont;
+                        color: @navy;
+                        }//end input
+                    }//end email
+                }//end nameEmailContainer
+
+                .message {
+
+                    textarea {
+                    font-size: 1.4rem;
+                    margin: 1%;
+                    .inputBorder;
+                    .formFont;
+                    color: @navy;
+                    }//end input
+                }//end message
+
+                .submitButton {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    input {
+                        font-size: 2rem;
+                        margin: 1%;
+                        padding: 10px 20px;
+                        border: 2px solid @navy;
+                        border-radius: 10px;
+                        background: @navy;
+                        color: @lightGrey;
+                        font-family: @fontButton;
+                    }
+
+                    input:hover {
+                        background: @lightGrey;
+                        color: @navy;
+                    }
+
+                }//end submitButton
+            }//end form
+        }//end mainContact
+    }//end contactus
+}//end body
