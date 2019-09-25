@@ -141,10 +141,15 @@ body {
                 }
 
             h3 {
-             font-size: 3vw;
+             font-size: 4vw;
              margin-top: 25px;
              margin-bottom: 15px;
              color: @lightGrey;
+
+                @media @tablet {
+                    width: 100%;
+                    font-size: 4.5vw;
+                }
                 
                 @media @mobile {
                     width: 100%;
@@ -173,11 +178,12 @@ body {
                 }
 
                 h4 {
-                    font-size: 2vw;
+                    font-size: 3vw;
                     margin-top: 15px;
                     margin-bottom: 10px;
                     border-bottom: 2px solid @darkGrey;
                     color: @navy;
+
                     
                     @media @mobile {
                         width: 100%;
@@ -191,7 +197,7 @@ body {
 
                 p {
                     color: @navy;
-                    
+
                     @media @mobile {
                         width: 100%;
                         font-size: 3.5vw;
@@ -238,10 +244,14 @@ body {
                 padding-top: 15px;
             
                 h4 {
-                    font-size: 2vw;
+                    font-size: 2.5vw;
                     margin-top: 15px;
                     margin-bottom: 10px;
                     color: @navy;
+
+                    @media @tablet {
+                        font-size: 3.5vw;
+                    }
 
                     @media @mobile {
                         font-size: 6vw;
@@ -298,11 +308,15 @@ body {
         background: @lightGrey;
 
         h2 {
-        font-size: 3vw;
+        font-size: 4vw;
         padding-top: 25px;
         text-align: center;
         background: @navy;
         color: @lightGrey;
+
+            @media @tablet {
+                font-size: 4.5vw;
+            }
 
             @media @mobile {
                 font-size: 6vw;

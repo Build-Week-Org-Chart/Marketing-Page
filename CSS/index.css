@@ -285,11 +285,6 @@ header .headerMain .headerName img {
 header .headerMain .slogan {
   width: 100%;
 }
-@media (max-width: 500px) {
-  header .headerMain .slogan {
-    width: 100%;
-  }
-}
 header .headerMain .slogan p {
   font-size: 2vw;
   padding: 0;
@@ -316,9 +311,7 @@ header .buttonContainer {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-basis: 33%;
-  margin-right: 8.5%;
-  margin-left: 8.5%;
+  width: 48%;
 }
 header .buttonContainer button {
   color: #D3ddEA;
@@ -495,10 +488,16 @@ body .mainFeatures .featuresHeader {
   }
 }
 body .mainFeatures .featuresHeader h3 {
-  font-size: 3vw;
+  font-size: 4vw;
   margin-top: 25px;
   margin-bottom: 15px;
   color: #D3ddEA;
+}
+@media (max-width: 880px) {
+  body .mainFeatures .featuresHeader h3 {
+    width: 100%;
+    font-size: 4.5vw;
+  }
 }
 @media (max-width: 500px) {
   body .mainFeatures .featuresHeader h3 {
@@ -527,7 +526,7 @@ body .mainFeatures .featuresContent .feature {
   }
 }
 body .mainFeatures .featuresContent .feature h4 {
-  font-size: 2vw;
+  font-size: 3vw;
   margin-top: 15px;
   margin-bottom: 10px;
   border-bottom: 2px solid #545E75;
@@ -587,10 +586,15 @@ body .productContainer .productExamples .productDescription {
   padding-top: 15px;
 }
 body .productContainer .productExamples .productDescription h4 {
-  font-size: 2vw;
+  font-size: 2.5vw;
   margin-top: 15px;
   margin-bottom: 10px;
   color: #22324d;
+}
+@media (max-width: 880px) {
+  body .productContainer .productExamples .productDescription h4 {
+    font-size: 3.5vw;
+  }
 }
 @media (max-width: 500px) {
   body .productContainer .productExamples .productDescription h4 {
@@ -644,11 +648,16 @@ body .contactus {
   background: #D3ddEA;
 }
 body .contactus h2 {
-  font-size: 3vw;
+  font-size: 4vw;
   padding-top: 25px;
   text-align: center;
   background: #22324d;
   color: #D3ddEA;
+}
+@media (max-width: 880px) {
+  body .contactus h2 {
+    font-size: 4.5vw;
+  }
 }
 @media (max-width: 500px) {
   body .contactus h2 {
@@ -858,4 +867,311 @@ footer .copyright p {
   text-align: center;
   padding-top: 15px;
   color: #D3ddEA;
+}
+.aboutNavContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: #22324d;
+  margin-top: 20px;
+  border-bottom: 3px solid #828C9B;
+}
+@media (max-width: 880px) {
+  .aboutNavContainer {
+    justify-content: space-between;
+    height: 70px;
+  }
+}
+.aboutNavContainer h1 {
+  color: #D3ddEA;
+  align-self: flex-end;
+  padding: 5px;
+  font-size: 3.5vw;
+  margin-left: 10px;
+}
+@media (max-width: 880px) {
+  .aboutNavContainer h1 {
+    width: 25%;
+    font-size: 4vw;
+    justify-self: flex-start;
+    padding: 1%;
+    margin: 0;
+  }
+}
+@media (max-width: 500px) {
+  .aboutNavContainer h1 {
+    font-size: 5vw;
+  }
+}
+.aboutNavContainer nav {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  width: 85%;
+  font-size: 1.75vw;
+  font-family: 'Gayathri', sans-serif;
+  padding-bottom: 13px;
+}
+@media (max-width: 880px) {
+  .aboutNavContainer nav {
+    width: 80%;
+    height: 60px;
+    font-size: 3vw;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .aboutNavContainer nav {
+    width: 80%;
+    height: 60px;
+    font-size: 3.5vw;
+    margin-right: 5%;
+    margin-left: 5%;
+    justify-content: space-between;
+  }
+}
+.aboutNavContainer nav a {
+  color: #D3ddEA;
+  text-decoration: none;
+}
+@media (max-width: 880px) {
+  .aboutNavContainer nav a {
+    padding-right: 5px;
+  }
+}
+.aboutNavContainer nav a:hover {
+  color: #FF990A;
+}
+.aboutNavContainer img {
+  margin-right: 10px;
+}
+@media (max-width: 880px) {
+  .aboutNavContainer img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .aboutNavContainer img {
+    display: none;
+  }
+}
+.aboutHeader {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #D3ddEA;
+  border-bottom: 4px solid #828C9B;
+}
+.aboutHeader h1 {
+  width: 96%;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-top: 30px;
+  text-align: center;
+  padding: 2%;
+  font-size: 6.5vw;
+  color: #22324d;
+}
+@media (max-width: 880px) {
+  .aboutHeader h1 {
+    font-size: 7.5vw;
+  }
+}
+@media (max-width: 500px) {
+  .aboutHeader h1 {
+    font-size: 9vw;
+  }
+}
+.aboutHeader .headerContent {
+  display: flex;
+  width: 96%;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+.aboutHeader .headerContent .headerImage {
+  display: flex;
+  justify-content: center;
+  width: 15%;
+  margin-left: 2.5%;
+}
+.aboutHeader .headerContent .headerImage img {
+  width: 100%;
+  align-self: center;
+}
+.aboutHeader .headerContent .slogan {
+  width: 80%;
+  margin-left: 2.5%;
+}
+.aboutHeader .headerContent .slogan h4 {
+  width: 100%;
+  padding-top: 25px;
+  font-size: 4vw;
+  color: #22324d;
+}
+@media (max-width: 880px) {
+  .aboutHeader .headerContent .slogan h4 {
+    font-size: 5vw;
+  }
+}
+@media (max-width: 500px) {
+  .aboutHeader .headerContent .slogan h4 {
+    font-size: 5.5vw;
+  }
+}
+.aboutHeader .headerContent .slogan p {
+  width: 100%;
+  padding-right: 25px;
+  font-size: 2vw;
+  color: #22324d;
+}
+@media (max-width: 880px) {
+  .aboutHeader .headerContent .slogan p {
+    font-size: 2.6vw;
+  }
+}
+@media (max-width: 500px) {
+  .aboutHeader .headerContent .slogan p {
+    font-size: 3.75vw;
+  }
+}
+body .title {
+  background: #D3ddEA;
+}
+body .title h1 {
+  width: 96%;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-top: 30px;
+  text-align: center;
+  padding: 2%;
+  font-size: 5.5vw;
+  border-bottom: 4px solid #828C9B;
+  color: #22324d;
+}
+@media (max-width: 500px) {
+  body .title h1 {
+    font-size: 8vw;
+  }
+}
+body .team {
+  display: flex;
+  flex-direction: column;
+  background: #D3ddEA;
+  padding-bottom: 20px;
+}
+body .team .teamMember {
+  display: flex;
+  flex-direction: column;
+  width: 96%;
+  margin-right: 2%;
+  margin-left: 2%;
+  border: 5px solid #22324d;
+  border-radius: 15px;
+  margin-top: 25px;
+  background: #545E75;
+}
+body .team .teamMember .profile {
+  display: flex;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  body .team .teamMember .profile {
+    flex-direction: column-reverse;
+  }
+}
+body .team .teamMember .profile .imgContainer {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 880px) {
+  body .team .teamMember .profile .imgContainer {
+    width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  body .team .teamMember .profile .imgContainer {
+    width: 96%;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+}
+body .team .teamMember .profile .imgContainer img {
+  width: 92%;
+  margin: 4%;
+  border: 4px solid #D3ddEA;
+  border-radius: 15px;
+}
+body .team .teamMember .profile .person {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+@media (max-width: 880px) {
+  body .team .teamMember .profile .person {
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  body .team .teamMember .profile .person {
+    width: 96%;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+}
+body .team .teamMember .profile .person h3 {
+  margin-top: 30px;
+  padding: 2%;
+  font-size: 5vw;
+  color: #D3ddEA;
+}
+@media (max-width: 880px) {
+  body .team .teamMember .profile .person h3 {
+    font-size: 6vw;
+  }
+}
+@media (max-width: 500px) {
+  body .team .teamMember .profile .person h3 {
+    text-align: center;
+    font-size: 8vw;
+  }
+}
+body .team .teamMember .profile .person h4 {
+  margin-top: 30px;
+  padding: 2%;
+  font-size: 3vw;
+  color: #D3ddEA;
+}
+@media (max-width: 880px) {
+  body .team .teamMember .profile .person h4 {
+    font-size: 4vw;
+  }
+}
+@media (max-width: 500px) {
+  body .team .teamMember .profile .person h4 {
+    text-align: center;
+    font-size: 6vw;
+    margin-top: 10px;
+  }
+}
+body .team .teamMember p {
+  width: 100%;
+  color: #D3ddEA;
+  padding: 2%;
+  font-size: 2vw;
+}
+@media (max-width: 880px) {
+  body .team .teamMember p {
+    font-size: 3.25vw;
+  }
+}
+@media (max-width: 500px) {
+  body .team .teamMember p {
+    font-size: 3.75vw;
+    width: 96%;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
 }
