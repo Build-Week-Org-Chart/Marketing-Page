@@ -1,0 +1,82 @@
+.aboutHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: @lightGrey;
+    border-bottom: 4px solid @mediumGrey;
+
+    h1 {
+        width: 96%;
+        margin-right: 2%;
+        margin-left: 2%;
+        margin-top: 30px;
+        text-align: center;
+        padding: 2%;
+        font-size: 6.5vw;
+        color: @navy;
+
+        @media @tablet {
+            font-size: 7.5vw;
+        }
+
+        @media @mobile {
+            font-size: 9vw;
+        }
+    }//end h1
+
+    .headerContent {
+        display: flex;
+        width: 96%;
+        margin-right: 2%;
+        margin-left: 2%;
+
+    .headerImage {
+        display: flex;
+        justify-content: center;    
+        width: 15%;
+        margin-left: 2.5%;
+    
+            img {
+                width: 100%;
+                align-self: center;
+
+            }//end img
+        }//end HeaderName
+
+        .slogan {
+            width: 80%;
+            margin-left: 2.5%;
+
+            h4 {
+                width: 100%;
+                padding-top: 25px;
+                font-size: 4vw;
+                color: @navy;
+
+                @media @tablet {
+                    font-size: 5vw;
+                }
+        
+                @media @mobile {
+                    font-size: 5.5vw;
+                }
+            }//end h4
+            
+            p {
+                width: 100%;
+                padding-right: 25px;
+                font-size: 2vw;
+                color: @navy;
+
+                @media @tablet {
+                    font-size: 2.6vw;
+                }
+
+                @media @mobile {
+                    font-size: 3.75vw;
+                }
+            }//end p
+        }//end slogan
+    }//end headerContent
+}//end Header

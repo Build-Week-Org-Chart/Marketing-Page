@@ -1,0 +1,87 @@
+
+
+.aboutNavContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: @navy;
+    margin-top: 20px;
+    border-bottom: 3px solid @mediumGrey;
+
+    @media @tablet {
+        justify-content: space-between;
+        height: 70px;
+    }
+
+    h1 {
+        color: @lightGrey;
+        align-self: flex-end;
+        padding: 5px;
+        font-size: 3.5vw;
+        margin-left: 10px;
+
+        @media @tablet {
+            width: 25%;
+            font-size: 4vw;
+            justify-self: flex-start;
+            padding: 1%;
+            margin: 0;
+        }
+
+        @media @mobile {
+            font-size: 5vw;
+        }
+    }
+
+    nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;   
+    width: 85%;
+    font-size: 1.75vw;
+    font-family: @fontHeadings;
+    padding-bottom: 13px;
+
+        @media @tablet {
+            width: 80%;
+            height: 60px;
+            font-size: 3vw;
+            margin-right: 2%;
+            margin-left: 2%;
+            margin-top: 10px;            
+        }
+
+        @media @mobile {
+            width: 80%;
+            height: 60px;
+            font-size: 3.5vw;
+            margin-right: 5%;
+            margin-left: 5%;
+            justify-content: space-between;   
+        }
+
+        a {
+            color: @lightGrey;
+            text-decoration: none;
+
+            @media @tablet {
+                padding-right: 5px;
+            }
+        }
+
+        a:hover {
+            color: @orange;
+        }  
+    }
+    img {
+        margin-right: 10px;
+
+        @media @tablet {
+            display: none;
+        }
+        
+        @media @mobile {
+           display: none;
+        }
+    }
+}

@@ -1,0 +1,140 @@
+body {
+
+    .title {
+        background: @lightGrey;
+
+        h1 {
+            width: 96%;
+            margin-right: 2%;
+            margin-left: 2%;
+            margin-top: 30px;
+            text-align: center;
+            padding: 2%;
+            font-size: 5.5vw;
+            border-bottom: 4px solid @mediumGrey;
+            color: @navy;
+
+            @media @mobile {
+                font-size: 8vw;
+            }
+        }
+    }
+
+    .team {
+        display: flex;
+        flex-direction: column;
+        background: @lightGrey;
+        padding-bottom: 20px;
+
+        .teamMember {
+            display: flex;
+            flex-direction: column;
+            width: 96%;
+            margin-right: 2%;
+            margin-left: 2%;
+            border: 5px solid @navy;
+            border-radius: 15px;
+            margin-top: 25px;
+            background: @darkGrey;
+
+            .profile {
+                display: flex;
+                width: 100%;
+
+                @media @mobile {
+                    flex-direction: column-reverse;
+                }
+
+                .imgContainer {
+                    width: 35%;
+                    display: flex;
+                    justify-content: center;
+
+                    @media @tablet {
+                      width: 40%;
+                    }
+            
+                    @media @mobile {
+                        width: 96%;
+                        margin-right: 2%;
+                        margin-left: 2%;
+                    }
+
+                    img {
+                        width: 92%;
+                        margin: 4%;
+                        border: 4px solid @lightGrey;
+                        border-radius: 15px;
+                    }//end profile pic
+                }//end imgContainer
+
+                .person {
+                    display: flex;
+                    flex-direction: column;
+                    width: 65%;
+
+                    @media @tablet {
+                        width: 60%;
+                      }
+              
+                      @media @mobile {
+                        width: 96%;
+                        margin-right: 2%;
+                        margin-left: 2%;
+                      }
+
+                    h3 {
+                        margin-top: 30px;;
+                        padding: 2%;
+                        font-size: 5vw;
+                        color: @lightGrey;
+
+                        @media @tablet {
+                            font-size: 6vw;
+                        }
+
+                        @media @mobile {
+                            text-align: center;
+                            font-size: 8vw;
+                          }
+                    }//end name
+
+                    h4{                        
+                        margin-top: 30px;
+                        padding: 2%;
+                        font-size: 3vw;
+                        color: @lightGrey;
+
+                        @media @tablet {
+                            font-size: 4vw;
+                        }
+
+                        @media @mobile {
+                            text-align: center;
+                            font-size: 6vw;
+                            margin-top: 10px;
+                          }
+                    }//end role
+                }//end person
+            }//end profile
+
+            p { 
+                width: 100%;
+                color: @lightGrey;
+                padding: 2%;
+                font-size: 2vw;
+
+                @media @tablet {
+                    font-size: 3.25vw;
+                }
+ 
+                @media @mobile {
+                    font-size: 3.75vw;
+                    width: 96%;
+                    margin-right: 2%;
+                    margin-left: 2%;
+                  }
+            }//end job description
+        }//end teamMember
+    }//end team
+}//end body
