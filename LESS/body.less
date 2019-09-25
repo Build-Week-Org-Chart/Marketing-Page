@@ -4,10 +4,14 @@ body {
         display: flex;
         width: 100%;
         background: @lightGrey;
+        padding-top: 10px;
+        padding-bottom: 10px;
 
         @media @mobile {
         display: flex;
         flex-direction: column;
+        padding-top: 0;
+        padding-bottom: 20px
         }
 
         img {
@@ -22,17 +26,16 @@ body {
         }//end img
 
         .introContent {
-            max-width: 48%;
+            width: 48%;
             display: flex;
             flex-direction: column;
-            align-items: center;
             margin: 1%;
             border-radius: 15px;
             background: @darkGrey;
             color: @lightGrey;
 
             @media @mobile {
-                max-width: 90%;
+                width: 90%;
                 margin-right: 5%;
                 margin-left: 5%;
                 }
@@ -68,20 +71,18 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 70%;
-                margin-right: 1%;
-                margin-left: 1%;
+                flex-basis: 50%;
+                margin-right: 11%;
+                margin-left: 11%;
                 margin-top: 30px;
                 margin-bottom: 15px;
     
                     @media @large {
                         margin-top: 15px;
-                        margin-bottom: 15px;
                     }
 
                     @media @tablet {
                         margin-top: 15px;
-                        margin-bottom: 15px;
                     }
 
                     button {
@@ -108,7 +109,7 @@ body {
                                 padding: 10px 25%;
                                 margin-top: 15px;
                                 margin-bottom: 15px;
-                                font-size: 2rem;
+                                font-size: 5vw;
                             }
                     }//end button
 
@@ -128,37 +129,25 @@ body {
         background: @lightGrey;
 
             .featuresHeader {
-                background: @navy;
                 width: 100%;
-                text-align: center;
-                
-                @media @mobile {
-                    width: 100%;
-                    padding: 10px 25%;
-                    margin-top: 15px;
-                    margin-bottom: 15px;
-                    font-size: 4rem;
+                background: @navy;
+
+            h2 {
+                .h2;
+
+                @media @large {
+                    font-size: 3.25vw;
                 }
-
-            h3 {
-             font-size: 4vw;
-             margin-top: 25px;
-             margin-bottom: 15px;
-             color: @lightGrey;
-
+                
                 @media @tablet {
-                    width: 100%;
                     font-size: 4.5vw;
                 }
                 
                 @media @mobile {
-                    width: 100%;
-                    margin-top: 15px;
-                    margin-bottom: 15px;
                     font-size: 7vw;
                 }
 
-            }//end h3
+            }//end h2 featuresHeader
         }//end featuresHeader
 
         .featuresContent {
@@ -178,18 +167,26 @@ body {
                 }
 
                 h4 {
-                    font-size: 3vw;
-                    margin-top: 15px;
+                    width: 100%;
+                    font-size: 2.5vw;
+                    margin-top: 30px;
                     margin-bottom: 10px;
                     border-bottom: 2px solid @darkGrey;
                     color: @navy;
 
-                    
+                    @media @large {
+                        font-size: 2vw;
+                    }
+
+                    @media @tablet {
+                        font-size: 3vw;
+                    }
+
                     @media @mobile {
                         width: 100%;
-                        margin-top: 15px;
+                        margin-top: 10px;
                         margin-bottom: 15px;
-                        font-size: 6vw;
+                        font-size: 5vw;
                         text-align: center;
                     }
     
@@ -202,7 +199,6 @@ body {
                         width: 100%;
                         font-size: 3.5vw;
                     }
-    
                 }//end p
 
             }//end .feature
@@ -210,10 +206,30 @@ body {
     }//end mainFeatures
 
     .solidColorDivider {
-        height: 30px;
+        height: 20px;
         background: @orange;
     }//end solidColorDivider
 
+    .productsHeader {
+
+        h2 {
+            .h2;
+            background: @navy;
+
+            @media @large {
+                font-size: 3.25vw;
+            }
+
+            @media @tablet {
+                font-size: 4.5vw;
+            }
+
+            @media @mobile {
+                font-size: 7vw;
+            }
+        }
+    }
+    
     .productContainer {
         width: 100%;
         display: flex;
@@ -244,13 +260,17 @@ body {
                 padding-top: 15px;
             
                 h4 {
-                    font-size: 2.5vw;
+                    font-size: 3vw;
                     margin-top: 15px;
                     margin-bottom: 10px;
                     color: @navy;
 
+                    @media @large {
+                        font-size: 2.5vw;
+                    }
+                    
                     @media @tablet {
-                        font-size: 3.5vw;
+                        font-size: 4vw;
                     }
 
                     @media @mobile {
@@ -306,20 +326,22 @@ body {
 
     .contactus {
         background: @lightGrey;
+        padding-bottom: 10px;
 
         h2 {
-        font-size: 4vw;
-        padding-top: 25px;
-        text-align: center;
-        background: @navy;
-        color: @lightGrey;
+            .h2;
+            background: @navy;
+
+            @media @large {
+                font-size: 3.25vw;
+            }
 
             @media @tablet {
                 font-size: 4.5vw;
             }
 
             @media @mobile {
-                font-size: 6vw;
+                font-size: 7vw;
             }
         }//end h2
 
