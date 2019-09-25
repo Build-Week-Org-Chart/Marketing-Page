@@ -3,6 +3,7 @@ body {
     .intro {
         display: flex;
         width: 100%;
+        background: @lightGrey;
 
         @media @mobile {
         display: flex;
@@ -38,24 +39,26 @@ body {
 
             .introParagraph {
                 display: flex;
+                flex-direction: column;
 
                 p {
-                font-size: 2.25vw;
+                font-size: 2rem;
                 width: 92%;
                 margin: 4%;
-                margin-bottom: 25px;
-
+                margin-bottom: 10px;
+                margin-top: 10px;
+ 
                     @media @large {
-                        font-size: 2.75rem;
+                        font-size: 2.25rem;
                     }
 
                     @media @tablet {
-                        font-size: 2.75vw;
+                        font-size: 2.5vw;
                         margin-bottom: 10px;
                     } 
                     
                     @media @mobile {
-                        font-size: 5vw;
+                        font-size: 4vw;
                     }
 
                 }//end p
@@ -86,10 +89,11 @@ body {
                             background: @navy;
                             border: 3px solid @lightGrey;
                             border-radius: 15px;
-                            padding: 15px 33%;
-                            font-size: 2.5vw;
+                            padding: 15px 27%;
+                            font-size: 2.75rem;
                             font-family: @fontButton;
                             text-align: center;
+                            white-space: nowrap;
 
                             @media @large {
                                 font-size: 2.75rem;
@@ -97,14 +101,14 @@ body {
             
                             @media @tablet {
                                 padding: 15px 33%;
-                                font-size: 2.75vw;
+                                font-size: 2.5vw;
                             } 
                             
                             @media @mobile {
                                 padding: 10px 25%;
                                 margin-top: 15px;
                                 margin-bottom: 15px;
-                                font-size: 5vw;
+                                font-size: 2rem;
                             }
                     }//end button
 
@@ -117,20 +121,37 @@ body {
     }//end intro
 
     .mainFeatures {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        background: @lightGrey;
 
             .featuresHeader {
                 background: @navy;
                 width: 100%;
                 text-align: center;
+                
+                @media @mobile {
+                    width: 100%;
+                    padding: 10px 25%;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    font-size: 4rem;
+                }
 
             h3 {
              font-size: 3vw;
              margin-top: 25px;
              margin-bottom: 15px;
              color: @lightGrey;
+                
+                @media @mobile {
+                    width: 100%;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    font-size: 7vw;
+                }
 
             }//end h3
         }//end featuresHeader
@@ -139,18 +160,43 @@ body {
             display: flex;
             justify-content: space-around;
 
+            @media @mobile {
+                flex-direction: column;
+                }
+
             .feature {
                 width: 30%;
+
+                @media @mobile {
+                    width: 90%;
+                    margin: 15px 5%;
+                }
 
                 h4 {
                     font-size: 2vw;
                     margin-top: 15px;
                     margin-bottom: 10px;
                     border-bottom: 2px solid @darkGrey;
+                    color: @navy;
+                    
+                    @media @mobile {
+                        width: 100%;
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                        font-size: 6vw;
+                        text-align: center;
+                    }
+    
                 }//end h4
 
                 p {
-
+                    color: @navy;
+                    
+                    @media @mobile {
+                        width: 100%;
+                        font-size: 3.5vw;
+                    }
+    
                 }//end p
 
             }//end .feature
@@ -167,11 +213,22 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        background: @lightGrey;
+
+        @media @mobile {
+            flex-direction: column;
+        }
 
         .productExamples {
             width: 46%;
             display: flex;
             flex-direction: column;
+            
+            @media @mobile {
+                width: 96%;
+                margin-right: 2%;
+                margin-left: 2%;
+            }
 
             .productDescription {
                 background: @mediumGrey;
@@ -184,21 +241,54 @@ body {
                     font-size: 2vw;
                     margin-top: 15px;
                     margin-bottom: 10px;
+                    color: @navy;
+
+                    @media @mobile {
+                        font-size: 6vw;
+                    }
                 }//end h4
-            }//end productDescription
+            }//end productDescription(Title)
 
             .productContent {
+                width: 100%;
                 display: flex;
                 margin-bottom: 15px;
-                height: 240px;
+                align-self: center;
 
-                img {
+                @media @tablet {
+                    flex-direction: column;
+                }
 
+                @media @mobile {
+                    flex-direction: row;
+                }
+
+                .imgExampleProduct {
+                    width: 50%;
+                    align-self: center;
+
+                    @media @tablet {
+                        width: 240px;
+                        align-self: center;
+                    }
+    
                 }//end img
 
                 p {
-                    font-size: 1.25vw;
-                    padding: 5px;
+                    width: 50%;
+                    font-size: 1.75rem;
+                    padding: 10px;
+                    color: @navy;
+
+                    @media @tablet {
+                        width: 96%;
+                        align-self: center;  
+                    }
+    
+                    @media @mobile {
+                        font-size: 3.5vw;
+                    }
+    
                 }//end p
             }//end productContent
         }//end productExamples
@@ -213,6 +303,10 @@ body {
         text-align: center;
         background: @navy;
         color: @lightGrey;
+
+            @media @mobile {
+                font-size: 6vw;
+            }
         }//end h2
 
         .mainContact {
@@ -220,28 +314,79 @@ body {
             width: 98%;
             margin: 1%;
 
+            @media @tablet {
+                flex-direction: column-reverse;
+            }
+
             .socialMedia {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
-                margin-right: 5%;
-                margin-left: 5%;
+                margin-right: 4%;
+                margin-left: 4%;
+                margin-bottom: 20px;
+                width: 16%;
+
+                @media @tablet {
+                    flex-direction: row;
+                    margin-right: 20%;
+                    margin-left: 20%;
+                    margin-bottom: 0;
+                    width: 60%;
+                    }
+
+                @media @mobile {
+                    flex-direction: row;
+                    margin-right: 12%;
+                    margin-left: 12%;
+                    margin-bottom: 0;
+                    width: 76%;
+                    }
 
                 a {
-                min-width: 100%;      
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                
+                    img {
+                        width: 60%;
+                    }
+
+                    img:hover {
+                        transform: scale(1.1);
+                    }
                 }//end a (includes img for social media)
             }//end socialMedia
         
             form {
+                width: 74%;
                 display: flex;
                 flex-direction: column;
                 align-self: flex-end;
+
+                @media @tablet {
+                    width: 96%;
+                }
 
                 .nameEmailContainer {
                     display: flex;
                     margin: 5px;
 
+                    @media @tablet {
+                        flex-direction: column;
+                        align-self: flex-start;
+                    }
+
                     .name {
+                        width: 48%;
+                        margin-right: 2%;
+                        align-self: center;
+
+                        @media @tablet {
+                            width: 100%;
+                            margin-right: 0;
+                            margin-bottom: 5px;
+                        }
 
                         input {
                         font-size: 1.5rem;
@@ -253,7 +398,16 @@ body {
                     }//end name
 
                     .email {
-                        
+                        width: 48%;
+                        margin-right: 2%;
+                        align-self: center;
+
+                        @media @tablet {
+                            width: 100%;
+                            margin-right: 0;
+                            margin-bottom: 5px;
+                        }
+
                         input {
                         font-size: 1.5rem;
                         .inputBorder;
@@ -264,8 +418,13 @@ body {
                 }//end nameEmailContainer
 
                 .message {
+                    width: 100%;
+                    align-self: center;
 
                     textarea {
+                    width: 98%;
+                    align-self: center;
+                    
                     font-size: 1.4rem;
                     margin: 1%;
                     .inputBorder;
@@ -278,6 +437,10 @@ body {
                     display: flex;
                     justify-content: flex-end;
 
+                    @media @mobile {
+                        justify-content: center;
+                    }
+
                     input {
                         font-size: 2rem;
                         margin: 1%;
@@ -287,6 +450,13 @@ body {
                         background: @navy;
                         color: @lightGrey;
                         font-family: @fontButton;
+
+                        @media @mobile {
+                            padding: 10px 25%;
+                            margin-top: 15px;
+                            margin-bottom: 15px;
+                            font-size: 2rem;
+                        }
                     }
 
                     input:hover {
