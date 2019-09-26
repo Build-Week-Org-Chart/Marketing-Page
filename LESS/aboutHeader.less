@@ -4,7 +4,8 @@
     flex-direction: column;
     width: 100%;
     background-color: @lightGrey;
-    border-bottom: 4px solid @mediumGrey;
+    border-bottom: none;
+
 
     h1 {
         width: 96%;
@@ -12,16 +13,20 @@
         margin-left: 2%;
         margin-top: 30px;
         text-align: center;
-        padding: 2%;
-        font-size: 6.5vw;
+        font-size: 6vw;
         color: @navy;
+        border-bottom: 4px solid @mediumGrey;
 
+        @media @large {
+            font-size: 5vw;
+        }
+        
         @media @tablet {
             font-size: 7.5vw;
         }
 
         @media @mobile {
-            font-size: 9vw;
+            font-size: 12vw;
         }
     }//end h1
 
@@ -41,6 +46,10 @@
                 width: 100%;
                 align-self: center;
 
+                @media @mobile {
+                    align-self: flex-start;
+                }
+
             }//end img
         }//end HeaderName
 
@@ -53,6 +62,10 @@
                 padding-top: 25px;
                 font-size: 4vw;
                 color: @navy;
+
+                @media @large {
+                    font-size: 3vw;
+                }
 
                 @media @tablet {
                     font-size: 5vw;
@@ -69,8 +82,12 @@
                 font-size: 2vw;
                 color: @navy;
 
+                @media @large {
+                    font-size: 1.6vw;
+                }
+
                 @media @tablet {
-                    font-size: 2.6vw;
+                    font-size: 2.25vw;
                 }
 
                 @media @mobile {

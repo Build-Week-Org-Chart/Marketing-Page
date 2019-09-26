@@ -1009,7 +1009,7 @@ footer .copyright p {
   flex-direction: column;
   width: 100%;
   background-color: #D3ddEA;
-  border-bottom: 4px solid #828C9B;
+  border-bottom: none;
 }
 .aboutHeader h1 {
   width: 96%;
@@ -1017,9 +1017,14 @@ footer .copyright p {
   margin-left: 2%;
   margin-top: 30px;
   text-align: center;
-  padding: 2%;
-  font-size: 6.5vw;
+  font-size: 6vw;
   color: #22324d;
+  border-bottom: 4px solid #828C9B;
+}
+@media (min-width: 1350px) {
+  .aboutHeader h1 {
+    font-size: 5vw;
+  }
 }
 @media (max-width: 880px) {
   .aboutHeader h1 {
@@ -1028,7 +1033,7 @@ footer .copyright p {
 }
 @media (max-width: 500px) {
   .aboutHeader h1 {
-    font-size: 9vw;
+    font-size: 12vw;
   }
 }
 .aboutHeader .headerContent {
@@ -1047,6 +1052,11 @@ footer .copyright p {
   width: 100%;
   align-self: center;
 }
+@media (max-width: 500px) {
+  .aboutHeader .headerContent .headerImage img {
+    align-self: flex-start;
+  }
+}
 .aboutHeader .headerContent .slogan {
   width: 80%;
   margin-left: 2.5%;
@@ -1056,6 +1066,11 @@ footer .copyright p {
   padding-top: 25px;
   font-size: 4vw;
   color: #22324d;
+}
+@media (min-width: 1350px) {
+  .aboutHeader .headerContent .slogan h4 {
+    font-size: 3vw;
+  }
 }
 @media (max-width: 880px) {
   .aboutHeader .headerContent .slogan h4 {
@@ -1073,9 +1088,14 @@ footer .copyright p {
   font-size: 2vw;
   color: #22324d;
 }
+@media (min-width: 1350px) {
+  .aboutHeader .headerContent .slogan p {
+    font-size: 1.6vw;
+  }
+}
 @media (max-width: 880px) {
   .aboutHeader .headerContent .slogan p {
-    font-size: 2.6vw;
+    font-size: 2.25vw;
   }
 }
 @media (max-width: 500px) {
@@ -1086,19 +1106,18 @@ footer .copyright p {
 .aboutBody .title {
   background: #D3ddEA;
 }
-.aboutBody .title h1 {
-  width: 96%;
-  margin-right: 2%;
-  margin-left: 2%;
-  margin-top: 30px;
+.aboutBody .title h2 {
+  width: 100%;
+  font-size: 4vw;
+  padding-top: 40px;
+  padding-bottom: 20px;
   text-align: center;
-  padding: 2%;
-  font-size: 5.5vw;
-  border-bottom: 4px solid #828C9B;
-  color: #22324d;
+  color: #D3ddEA;
+  text-transform: uppercase;
+  background: #22324d;
 }
 @media (max-width: 500px) {
-  .aboutBody .title h1 {
+  .aboutBody .title h2 {
     font-size: 8vw;
   }
 }
@@ -1129,20 +1148,13 @@ footer .copyright p {
   }
 }
 .aboutBody .team .teamMember .profile .imgContainer {
-  width: 35%;
+  width: 27%;
   display: flex;
   justify-content: center;
 }
-@media (max-width: 880px) {
-  .aboutBody .team .teamMember .profile .imgContainer {
-    width: 40%;
-  }
-}
 @media (max-width: 500px) {
   .aboutBody .team .teamMember .profile .imgContainer {
-    width: 96%;
-    margin-right: 2%;
-    margin-left: 2%;
+    align-self: center;
   }
 }
 .aboutBody .team .teamMember .profile .imgContainer img {
@@ -1171,7 +1183,7 @@ footer .copyright p {
 .aboutBody .team .teamMember .profile .person h3 {
   margin-top: 30px;
   padding: 2%;
-  font-size: 5vw;
+  font-size: 5.5rem;
   color: #D3ddEA;
 }
 @media (max-width: 880px) {
@@ -1188,7 +1200,7 @@ footer .copyright p {
 .aboutBody .team .teamMember .profile .person h4 {
   margin-top: 30px;
   padding: 2%;
-  font-size: 3vw;
+  font-size: 3.5rem;
   color: #D3ddEA;
 }
 @media (max-width: 880px) {
@@ -1199,26 +1211,74 @@ footer .copyright p {
 @media (max-width: 500px) {
   .aboutBody .team .teamMember .profile .person h4 {
     text-align: center;
-    font-size: 6vw;
+    font-size: 5.5vw;
     margin-top: 10px;
   }
 }
 .aboutBody .team .teamMember p {
-  width: 100%;
+  width: 98%;
   color: #D3ddEA;
   padding: 2%;
-  font-size: 2vw;
+  font-size: 2rem;
 }
 @media (max-width: 880px) {
   .aboutBody .team .teamMember p {
-    font-size: 3.25vw;
+    font-size: 2.5vw;
   }
 }
 @media (max-width: 500px) {
   .aboutBody .team .teamMember p {
-    font-size: 3.75vw;
+    font-size: 3.5vw;
     width: 96%;
     margin-right: 2%;
     margin-left: 2%;
   }
+}
+.aboutBody .team .teamMember .GitHub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.aboutBody .team .teamMember .GitHub p {
+  width: 14%;
+  font-family: 'Questrial', sans-serif;
+  font-size: 2.8vw;
+  color: #D3ddEA;
+  margin: 0;
+  padding: 5px 0;
+  text-align: right;
+}
+@media (min-width: 1350px) {
+  .aboutBody .team .teamMember .GitHub p {
+    width: 20%;
+    font-size: 2.2vw;
+  }
+}
+@media (max-width: 880px) {
+  .aboutBody .team .teamMember .GitHub p {
+    width: 18%;
+    font-size: 4vw;
+  }
+}
+@media (max-width: 500px) {
+  .aboutBody .team .teamMember .GitHub p {
+    width: 20%;
+    font-size: 5vw;
+  }
+}
+.aboutBody .team .teamMember .GitHub a {
+  width: 8%;
+  padding: 5px 0;
+}
+@media (max-width: 500px) {
+  .aboutBody .team .teamMember .GitHub a {
+    width: 12%;
+  }
+}
+.aboutBody .team .teamMember .GitHub a img {
+  width: 100%;
+}
+.aboutBody .team .teamMember .GitHub a img:hover {
+  transform: scale(1.2);
 }
