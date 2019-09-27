@@ -7,6 +7,10 @@
             .h2;
             background: @navy;
 
+            @media @large {
+                font-size: 3vw;
+            }
+
             @media @mobile {
                 font-size: 8vw;
             }
@@ -75,6 +79,10 @@
                         padding: 2%;
                         font-size: 5.5rem;
                         color: @lightGrey;
+
+                        @media @large {
+                            font-size: 3.25vw;
+                        }
 
                         @media @tablet {
                             font-size: 6vw;
@@ -164,10 +172,10 @@
 
                     img {
                         width: 100%;
-                    }
 
-                    img:hover {
-                        transform: scale(1.2);
+                        &:hover {
+                            transform: scale(1.2);
+                        }
                     }
                 }//end link to git hub
             }//end github contact
