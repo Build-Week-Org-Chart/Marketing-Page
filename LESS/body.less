@@ -68,12 +68,9 @@ body {
             }//end introParagraph
            
             .buttonContainer {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-basis: 50%;
-                margin-right: 11%;
-                margin-left: 11%;
+                width: 50%;
+                margin-right: 25%;
+                margin-left: 25%;
                 margin-top: 30px;
                 margin-bottom: 15px;
     
@@ -82,7 +79,7 @@ body {
                     }
 
                     @media @tablet {
-                        margin-top: 15px;
+                        margin-top: 0;
                     }
 
                 button {
@@ -111,125 +108,16 @@ body {
                         margin-bottom: 15px;
                         font-size: 5vw;
                     }
-                }//end button
 
-                button:hover {
-                    transform: scale(1.1);
-                    color: @orange;
-                }//end button hover
+                    &:hover {
+                        transform: scale(1.1);
+                        color: @orange;
+                    }//end button hover
+                }//end button
             }//end buttonContainer
         }//end introContent
     }//end intro
 
-    .mainFeatures {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: @lightGrey;
-
-            .featuresHeader {
-                width: 100%;
-                background: @navy;
-
-            h2 {
-                .h2;
-
-                @media @large {
-                    font-size: 3.25vw;
-                }
-                
-                @media @tablet {
-                    font-size: 4.5vw;
-                }
-                
-                @media @mobile {
-                    font-size: 7vw;
-                }
-
-            }//end h2 featuresHeader
-        }//end featuresHeader
-
-        .featuresContent {
-            display: flex;
-            justify-content: space-around;
-
-            @media @mobile {
-                flex-direction: column;
-                }
-
-            .feature {
-                width: 30%;
-
-                @media @mobile {
-                    width: 90%;
-                    margin: 15px 5%;
-                }
-
-                h4 {
-                    width: 100%;
-                    font-size: 2.5vw;
-                    margin-top: 30px;
-                    margin-bottom: 10px;
-                    border-bottom: 2px solid @darkGrey;
-                    color: @navy;
-
-                    @media @large {
-                        font-size: 2vw;
-                    }
-
-                    @media @tablet {
-                        font-size: 3vw;
-                    }
-
-                    @media @mobile {
-                        width: 100%;
-                        margin-top: 10px;
-                        margin-bottom: 15px;
-                        font-size: 5vw;
-                        text-align: center;
-                    }
-    
-                }//end h4
-
-                p {
-                    color: @navy;
-
-                    @media @mobile {
-                        width: 100%;
-                        font-size: 3.5vw;
-                    }
-                }//end p
-
-            }//end .feature
-        }//end featuresContent
-    }//end mainFeatures
-
-    .solidColorDivider {
-        height: 20px;
-        background: @orange;
-    }//end solidColorDivider
-
-    .productsHeader {
-
-        h2 {
-            .h2;
-            background: @navy;
-
-            @media @large {
-                font-size: 3.25vw;
-            }
-
-            @media @tablet {
-                font-size: 4.5vw;
-            }
-
-            @media @mobile {
-                font-size: 7vw;
-            }
-        }
-    }
-    
     .productContainer {
         width: 100%;
         display: flex;
@@ -323,6 +211,114 @@ body {
             }//end productContent
         }//end productExamples
     }//end productContainer
+
+    .mainFeatures {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: @lightGrey;
+
+            .featuresHeader {
+                width: 100%;
+                background: @navy;
+
+            h2 {
+                .h2;
+
+                @media @large {
+                    font-size: 3.25vw;
+                }
+                
+                @media @tablet {
+                    font-size: 4.5vw;
+                }
+                
+                @media @mobile {
+                    font-size: 7vw;
+                }
+            }//end h2 featuresHeader
+        }//end featuresHeader
+
+        .featuresContent {
+            display: flex;
+            justify-content: space-around;
+
+            @media @mobile {
+                flex-direction: column;
+                }
+
+            .feature {
+                width: 30%;
+
+                @media @mobile {
+                    width: 90%;
+                    margin: 15px 5%;
+                }
+
+                h4 {
+                    width: 100%;
+                    font-size: 2.5vw;
+                    margin-top: 30px;
+                    margin-bottom: 10px;
+                    border-bottom: 2px solid @darkGrey;
+                    color: @navy;
+
+                    @media @large {
+                        font-size: 1.66vw;
+                    }
+
+                    @media @tablet {
+                        font-size: 3vw;
+                    }
+
+                    @media @mobile {
+                        width: 100%;
+                        margin-top: 10px;
+                        margin-bottom: 15px;
+                        font-size: 5vw;
+                        text-align: center;
+                    }
+    
+                }//end h4
+
+                p {
+                    color: @navy;
+
+                    @media @mobile {
+                        width: 100%;
+                        font-size: 3.5vw;
+                    }
+                }//end p
+
+            }//end .feature
+        }//end featuresContent
+    }//end mainFeatures
+
+    .solidColorDivider {
+        height: 20px;
+        background: @orange;
+    }//end solidColorDivider
+
+    .productsHeader {
+
+        h2 {
+            .h2;
+            background: @navy;
+
+            @media @large {
+                font-size: 3.25vw;
+            }
+
+            @media @tablet {
+                font-size: 4.5vw;
+            }
+
+            @media @mobile {
+                font-size: 7vw;
+            }
+        }
+    }
 
     .contactus {
         background: @lightGrey;

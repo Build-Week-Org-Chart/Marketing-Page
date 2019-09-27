@@ -16,6 +16,10 @@
     font-family: @fontHeadings;
     padding-bottom: 13px;
 
+        @media @tablet {
+            font-size: 2rem;
+        }    
+
         @media @mobile {
             width: 90%;
             height: 60px;
@@ -27,11 +31,11 @@
         a {
             color: @lightGrey;
             text-decoration: none;
-        }
 
-        a:hover {
-            color: @orange;
-        }  
+            &:hover {
+                color: @orange;
+            }  
+        }
     }
     img {
         margin-right: 10px;
