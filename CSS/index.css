@@ -1170,6 +1170,7 @@ footer .copyright p {
   width: 27%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 @media (max-width: 500px) {
   .aboutBody .team .teamMember .profile .imgContainer {
